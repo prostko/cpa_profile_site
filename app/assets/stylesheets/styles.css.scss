@@ -306,7 +306,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: asset-url("computer_brainstorm.jpg", image) center top no-repeat;
+  background-image: url(image_path("computer_brainstorm.jpg"));
   background-size: cover;
   height: 800px;
 }
