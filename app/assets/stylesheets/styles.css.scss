@@ -176,7 +176,7 @@ a img{
   height: 800px;
   width: auto;
   background-color: #f3f3f3;
-  background-image: asset-data-url("video.mp4");
+  background: url('video.mp4');
   background-size: cover;
 }
 
@@ -306,7 +306,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('computer_brainstorm.jpg')  center top no-repeat;
+  background: asset-url("computer_brainstorm.jpg", image) center top no-repeat;
   background-size: cover;
   height: 800px;
 }
