@@ -377,7 +377,7 @@ a img{
   }
 
 .android-customized-section-image {
-  background: url('computer_graphs.jpg') center top no-repeat;
+  background-image: url(image_path("computer_graphs.jpg"));
   background-size: cover;
   height: 400px;
 }
