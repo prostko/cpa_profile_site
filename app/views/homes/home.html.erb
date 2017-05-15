@@ -20,9 +20,8 @@
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase link-button" href="">What We Do</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase link-button" href="">About</a>
-
+              <%= link_to "What We Do", root_path, class: "mdl-navigation__link mdl-typography--text-uppercase link-button" %>
+              <%= link_to "About", root_path, class: "mdl-navigation__link mdl-typography--text-uppercase link-button" %>
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
@@ -44,22 +43,22 @@
 
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">link</a>
-          <a class="mdl-navigation__link" href="">link</a>
-          <a class="mdl-navigation__link" href="">link</a>
-          <a class="mdl-navigation__link" href="">link</a>
-          <a class="mdl-navigation__link" href="">link</a>
-          <a class="mdl-navigation__link" href="">link</a>
-          <a class="mdl-navigation__link" href="">link</a>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">Contact</span>
           <a class="mdl-navigation__link" href="">Email Link</a>
-
+          <%= link_to "", root_path, class: "" %>
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href=""> blog</a>
-          <a class="mdl-navigation__link" href="">link</a>
-          <a class="mdl-navigation__link" href="">link</a>
+          <%= link_to "blog", root_path, class: "mdl-navigation__link" %>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
+          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">For developers</span>
         </nav>
@@ -83,6 +82,7 @@
         </div>
         <div class="android-screen-section mdl-typography--text-center">
           <a name="screens"></a>
+
           <div class="mdl-typography--display-1-color-contrast">Streamlined local knowledge user</div>
           <div class="android-screens">
             <div class="android-wear android-screen">
@@ -90,31 +90,31 @@
                 <%= image_tag "award1", class: "android-screen-image" %>
                 <%= image_tag "award2", class: "android-screen-image" %>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">asymmetric</a>
+              <%= link_to "asymmetric", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
             </div>
             <div class="android-phone android-screen">
               <a class="android-image-link" href="">
                 <%= image_tag "award3", class: "android-screen-image"%>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Stand-alone</a>
+              <%= link_to "Stand-Alone", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
             </div>
             <div class="android-tablet android-screen">
               <a class="android-image-link" href="">
                 <%= image_tag "award4", class: "android-screen-image"%>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">bottom-line</a>
+              <%= link_to "bottom-line", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
             </div>
             <div class="android-tv android-screen">
               <a class="android-image-link" href="">
                 <%= image_tag "award4", class: "android-screen-image"%>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Taxes</a>
+              <%= link_to "Taxes", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
             </div>
             <div class="android-auto android-screen">
               <a class="android-image-link" href="">
                 <%= image_tag "award2", class: "android-screen-image"%>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon</a>
+              <%= link_to "Coming Soon", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" %>
             </div>
           </div>
         </div>
@@ -139,7 +139,7 @@
             <p class="mdl-typography--font-light">
               Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
               <br>
-              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+              <%= link_to "Customize", root_path, class: android-link mdl-typography--font-light %>
             </p>
           </div>
           <div class="android-customized-section-image" ></div>
@@ -260,12 +260,13 @@
               <li class="mdl-menu__item">Developer resources</li>
 
             </ul>
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+            <%= link_to "Blog", root_path, class: "android-link mdl-typography--font-light" %>
+            <%= link_to "Privacy Policy", root_path, class: "android-link mdl-typography--font-light" %>
           </div>
 
         </footer>
       </div>
     </div>
-    <a href="" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Contact!</a>
+    <a href="" target="_blank" id="" >Contact!</a>
+    <%= link_to "Contact!", root_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast", id: "view-source", target: "_blank" %>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
