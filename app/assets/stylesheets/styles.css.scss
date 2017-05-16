@@ -175,7 +175,7 @@ a img{
   position: relative;
   height: 800px;
   width: auto;
-  
+
 }
 
 .logo-font {
@@ -465,6 +465,17 @@ a img{
   cursor: pointer;
 }
 
+// #homepage_video {
+//   position: absolute;
+//   display: none;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: -100;
+// }
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
@@ -483,6 +494,7 @@ a img{
     top: 12px;
     transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
+
 
   /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
      consecutive "+" operators in some cases. Therefore, we need to use both
@@ -541,5 +553,27 @@ a img{
 
   .android-footer .mdl-mega-footer--bottom-section {
     display: none;
+  }
+
+  #homepage_video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+  }
+}
+
+@media (min-width: 900px) {
+  #homepage_video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
   }
 }
