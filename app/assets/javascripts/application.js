@@ -24,20 +24,20 @@ $( document ).ready(function() {
 
 
     var homepageVideo = $('#homepage_video')[0];
-
-    checkVideoPlayback = function () {
-      $('#homepage_video')[0].play();
-    }
     // there is a bug with 'data-upgraded' being added to the elements by MDL, this just makes sure the video keeps playing
     if (homepageVideo) {
-      homepageVideo.addEventListener('pause', function() {
+      playVideo = function () {
         homepageVideo.play();
-      })
+      };
+
+      homepageVideo.addEventListener('pause', function() {
+        playVideo();
+      });
 
       setTimeout(function () {
-        checkVideoPlayback();
+        playVideo();
       }, 150);
-    }
+    };
 
 
 });
