@@ -21,17 +21,23 @@ $( document ).ready(function() {
       $(event.target).css("border-bottom", "none")
       }
     );
-    // there is some kind of race condition between pause() and play(), 150 ms is needed before promise comes in from pause
+
+
+    var homepageVideo = $('#homepage_video')[0];
 
     checkVideoPlayback = function () {
-        if ($('homepage_video')) {
-          $('#homepage_video')[0].play();
-          console.log('checking')
-      };
+      $('#homepage_video')[0].play();
+    }
+    // there is a bug with 'data-upgraded' being added to the elements by MDL, this just makes sure the video keeps playing
+    if (homepageVideo) {
+      homepageVideo.addEventListener('pause', function() {
+        homepageVideo.play();
+      })
+
+      setTimeout(function () {
+        checkVideoPlayback();
+      }, 150);
     }
 
-    setTimeout(function () {
-      setInterval(checkVideoPlayback, 500)
-    }, 150);
 
 });
