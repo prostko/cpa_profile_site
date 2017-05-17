@@ -25,10 +25,18 @@ $( document ).ready(function() {
     setTimeout(function () {
       if ($('homepage_video')) {
         $('#homepage_video')[0].play();
+        setTimeout(function() {
+          $('#homepage_video')[0].play();
+        }, 1000);
       }
     }, 150);
 
 
+    $(".scrollToTop").click(function(e){
+        e.preventDefault();
+        console.log('back to top')
+        $('window').scrollTop();
+    });
 
 
 });
