@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 
 $( document ).ready(function() {
@@ -24,7 +23,9 @@ $( document ).ready(function() {
     );
     // there is some kind of race condition between pause() and play(), 150 ms is needed before promise comes in from pause
     setTimeout(function () {
-      $('#homepage_video')[0].play();
+      if ($('homepage_video')) {
+        $('#homepage_video')[0].play();
+      }
     }, 150);
 
 

@@ -1,151 +1,87 @@
 
-
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <%= image_tag "crap_logo", class: "android-logo-image"%>
-          </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
-          </div>
-          <!-- Navigation -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <%= link_to "What We Do", root_path, class: "mdl-navigation__link mdl-typography--text-uppercase link-button" %>
-              <%= link_to "About", root_path, class: "mdl-navigation__link mdl-typography--text-uppercase link-button" %>
-            </nav>
-          </div>
-          <span class="android-mobile-title mdl-layout-title">
-          </span>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">link</li>
-            <li class="mdl-menu__item">link</li>
-            <li disabled class="mdl-menu__item">link</li>
-            <li class="mdl-menu__item">link</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="android-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-
-        </span>
-        <nav class="mdl-navigation">
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Contact</span>
-          <a class="mdl-navigation__link" href="">Email Link</a>
-          <%= link_to "", root_path, class: "" %>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <%= link_to "blog", root_path, class: "mdl-navigation__link" %>
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <%= link_to "link", root_path, class: "mdl-navigation__link" %>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-        </nav>
-      </div>
-      <div class="android-content mdl-layout__content">
+      <div class="cpa-content mdl-layout__content">
         <a name="top"></a>
-        <div class="android-be-together-section mdl-typography--text-center">
+        <div class="cpa-be-together-section mdl-typography--text-center">
           <%= video_tag "video.mp4", muted: true, controls: false, :autoplay => true, :loop => true, id: "homepage_video" %>
-          <div class="logo-font android-slogan">More than just a number</div>
-          <div class="logo-font android-sub-slogan">This is a bad font</div>
-          <div class="logo-font android-create-character">
+          <div class="logo-font cpa-slogan">More than just a number</div>
+          <div class="logo-font cpa-sub-slogan">This is a bad font</div>
+          <div class="logo-font cpa-create-character">
             <a href=""><%= image_tag "andy" %> Live your passion</a>
           </div>
 
           <a href="#screens">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+            <button class="cpa-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
               <i class="material-icons">expand_more</i>
             </button>
           </a>
         </div>
-        <div class="android-screen-section mdl-typography--text-center">
+        <div class="cpa-screen-section mdl-typography--text-center">
           <a name="screens"></a>
 
           <div class="mdl-typography--display-1-color-contrast">Streamlined local knowledge user</div>
-          <div class="android-screens">
-            <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
-                <%= image_tag "award1", class: "android-screen-image" %>
-                <%= image_tag "award2", class: "android-screen-image" %>
+          <div class="cpa-screens">
+            <div class="cpa-wear cpa-screen">
+              <a class="cpa-image-link" href="">
+                <%= image_tag "award1", class: "cpa-screen-image" %>
+                <%= image_tag "award2", class: "cpa-screen-image" %>
               </a>
-              <%= link_to "asymmetric", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
+              <%= link_to "asymmetric", root_path, class: "cpa-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
             </div>
-            <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
-                <%= image_tag "award3", class: "android-screen-image"%>
+            <div class="cpa-phone cpa-screen">
+              <a class="cpa-image-link" href="">
+                <%= image_tag "award3", class: "cpa-screen-image"%>
               </a>
-              <%= link_to "Stand-Alone", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
+              <%= link_to "Stand-Alone", root_path, class: "cpa-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
             </div>
-            <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
-                <%= image_tag "award4", class: "android-screen-image"%>
+            <div class="cpa-tablet cpa-screen">
+              <a class="cpa-image-link" href="">
+                <%= image_tag "award4", class: "cpa-screen-image"%>
               </a>
-              <%= link_to "bottom-line", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
+              <%= link_to "bottom-line", root_path, class: "cpa-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
             </div>
-            <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
-                <%= image_tag "award4", class: "android-screen-image"%>
+            <div class="cpa-tv cpa-screen">
+              <a class="cpa-image-link" href="">
+                <%= image_tag "award4", class: "cpa-screen-image"%>
               </a>
-              <%= link_to "Taxes", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
+              <%= link_to "Taxes", root_path, class: "cpa-link mdl-typography--font-regular mdl-typography--text-uppercase" %>
             </div>
-            <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
-                <%= image_tag "award2", class: "android-screen-image"%>
+            <div class="cpa-auto cpa-screen">
+              <a class="cpa-image-link" href="">
+                <%= image_tag "award2", class: "cpa-screen-image"%>
               </a>
-              <%= link_to "Coming Soon", root_path, class: "android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" %>
+              <%= link_to "Coming Soon", root_path, class: "cpa-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" %>
             </div>
           </div>
         </div>
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
+        <div class="cpa-wear-section">
+          <div class="cpa-wear-band">
+            <div class="cpa-wear-band-text">
               <div class="mdl-typography--display-2 mdl-typography--font-thin">Accounting</div>
               <p class="mdl-typography--headline mdl-typography--font-thin">
                 Kate Smith: Look at all these notes.
               </p>
               <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase cpa-alt-link" href="">
                   See what we can do for you &nbsp;<i class="material-icons">chevron_right</i>
                 </a>
               </p>
             </div>
           </div>
         </div>
-        <div class="android-customized-section">
-          <div class="android-customized-section-text">
+        <div class="cpa-customized-section">
+          <div class="cpa-customized-section-text">
             <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Accounting by you, for you</div>
             <p class="mdl-typography--font-light">
               Take care of the stuff oy care about.
               <br>
-              <%= link_to "Customize", root_path, class: "android-link mdl-typography--font-light" %>
+              <%= link_to "Customize", root_path, class: "cpa-link mdl-typography--font-light" %>
             </p>
           </div>
-          <div class="android-customized-section-image" ></div>
+          <div class="cpa-customized-section-image" ></div>
         </div>
-        <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">Our Services5f</div>
-          <div class="android-card-container mdl-grid">
+        <div class="cpa-more-section">
+          <div class="cpa-section-title mdl-typography--display-1-color-contrast">Our Services5f</div>
+          <div class="cpa-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
                 <%= image_tag "graph1" %>
@@ -157,7 +93,7 @@
                 <span class="mdl-typography--font-light mdl-typography--subhead">"Monitored actuating benchmark"</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="cpa-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                    "Expanded holistic benchmark"
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -175,7 +111,7 @@
                 <span class="mdl-typography--font-light mdl-typography--subhead">Words are in my not-so-humble opinion, the most inexhaustible form of magic we have, capable both of inflicting injury and remedying it."</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="cpa-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                    Internal Controls accountant
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -193,7 +129,7 @@
                 <span class="mdl-typography--font-light mdl-typography--subhead">Manufacturing and proccesses international</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="cpa-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                    Custom
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -211,7 +147,7 @@
                 <span class="mdl-typography--font-light mdl-typography--subhead">Accounts unlimited.</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="cpa-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                    Find
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -219,53 +155,8 @@
             </div>
           </div>
         </div>
+        <%= render :partial => 'layouts/footer' %>
 
-        <footer class="android-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-            </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Back to Top
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
-          </div>
-
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features may not be available in all areas</p>
-          </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-              Services
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">link</li>
-              <li class="mdl-menu__item">link</li>
-            </ul>
-            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-              For Developers
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">Developer resources</li>
-
-            </ul>
-            <%= link_to "Blog", root_path, class: "android-link mdl-typography--font-light" %>
-            <%= link_to "Privacy Policy", root_path, class: "android-link mdl-typography--font-light" %>
-          </div>
-
-        </footer>
       </div>
     </div>
-    <a href="" target="_blank" id="" >Contact!</a>
-    <%= link_to "Contact!", root_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast", id: "view-source", target: "_blank" %>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <%= render partial: 'layouts/contact_button' %>
