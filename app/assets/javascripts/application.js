@@ -16,7 +16,7 @@
 
 $( document ).ready(function() {
     $('.link-button').hover(function(){
-      $(event.target).css("border-bottom", "4px solid #8bc34a")
+      $(event.target).css("border-bottom", "4px solid #7A7914")
       }, function() {
       $(event.target).css("border-bottom", "none")
       }

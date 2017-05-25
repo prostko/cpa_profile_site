@@ -75,20 +75,20 @@ a img{
 
 .cpa-header {
   overflow: visible;
-  background-color: white;
+  background-color: #2B8CC7;
 }
 
   .cpa-header .material-icons {
-    color: #767777 !important;
+    color: #0C4263 !important;
   }
 
   .cpa-header .mdl-layout__drawer-button {
     background: transparent;
-    color: #767777;
+    color: #0C4263;
   }
 
   .cpa-header .mdl-navigation__link {
-    color: #757575;
+    color: #0C4263;
     font-weight: 700;
     font-size: 14px;
   }
@@ -187,7 +187,7 @@ a img{
 .logo-font {
   font-family: 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
-  color: #DBDDDD;
+  color: #DDD;
   font-weight: 500;
   text-shadow: 5;
 }
@@ -337,11 +337,11 @@ a img{
 
 .cpa-link {
   text-decoration: none;
-  color: #ff2714 !important;
+  color: #D04244 !important;
 }
 
   .cpa-link:hover {
-    color: #4cffff !important;
+    color: #7A7914 !important;
   }
 
   .cpa-link .material-icons {
@@ -352,7 +352,7 @@ a img{
 
 .cpa-alt-link {
   text-decoration: none;
-  color: #64ffda !important;
+  color: #949211 !important;
   font-size: 16px;
 }
 
@@ -497,6 +497,8 @@ a img{
   }
 }
 
+.mdl-color--accent {
+  background-color: #D04244 !important; }
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
