@@ -68,6 +68,10 @@ a img{
   width: 100px;
 }
 
+.footer-typography-h3 {
+  color: white;
+}
+
 
 .cpa-header {
   overflow: visible;
@@ -333,11 +337,11 @@ a img{
 
 .cpa-link {
   text-decoration: none;
-  color: #8bc34a !important;
+  color: #ff2714 !important;
 }
 
   .cpa-link:hover {
-    color: #7cb342 !important;
+    color: #4cffff !important;
   }
 
   .cpa-link .material-icons {
@@ -433,7 +437,7 @@ a img{
   }
 
 .cpa-footer {
-  background-color: #fafafa;
+  background-color: rgb(55, 71, 79);
   position: relative;
 }
 
@@ -497,7 +501,7 @@ a img{
 /**** Mobile layout ****/
 @media (max-width: 900px) {
   .cpa-navigation-container {
-    display: none;
+    // display: none;
   }
 
   .cpa-title {
