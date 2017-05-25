@@ -352,12 +352,12 @@ a img{
 
 .cpa-alt-link {
   text-decoration: none;
-  color: #949211 !important;
+  color: #DDD !important;
   font-size: 16px;
 }
 
   .cpa-alt-link:hover {
-    color: #00bfa5 !important;
+    color: #949211 !important;
   }
 
   .cpa-alt-link .material-icons {
@@ -499,6 +499,11 @@ a img{
 
 .mdl-color--accent {
   background-color: #D04244 !important; }
+
+.footer-contact-row {
+  margin: 3%;
+  line-height: 2;
+}
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
